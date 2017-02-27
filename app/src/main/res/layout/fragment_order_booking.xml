@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marudhar.marudharsareecenter.OrderBooking$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/ItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        android:id="@+id/AddedToCartIcon"
+        android:layout_toEndOf="@+id/section_label"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/itemqty"
+        android:layout_marginStart="295dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/decreaseButton"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/increaseButton"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addToCart"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/OrderBookImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/decreaseButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/OrderBookImageView1"
+        android:id="@+id/OrderBookImageView2"
+        android:layout_marginBottom="75dp" />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_alignStart="@+id/OrderBookImageView1"
+        android:id="@+id/OrderBookImageView3"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="250dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_alignStart="@+id/OrderBookImageView1"
+        android:id="@+id/OrderBookImageView4"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="500dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_take_notes"
+        android:id="@+id/takeNoteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

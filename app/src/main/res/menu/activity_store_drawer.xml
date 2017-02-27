@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inventory"
+            android:title="Inventory" />
+        <item
+            android:id="@+id/nav_new_order"
+            android:title="Order Booking" />
+        <item
+            android:id="@+id/nav_add_customer"
+            android:title="Add Customer " />
+        <item
+            android:id="@+id/nav_search_customer"
+            android:title="Search Customer " />
+        <item
+            android:id="@+id/nav_view_order"
+            android:title="View Order " />
+        <item
+            android:id="@+id/nav_generate_report"
+            android:title="Generate Report " />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

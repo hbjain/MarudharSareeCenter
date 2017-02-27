@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marudhar.marudharsareecenter.OrderBooking$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        android:id="@+id/AddedToCartIcon"
+        android:layout_toEndOf="@+id/section_label"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/itemqty"
+        android:layout_marginStart="495dp"
+        android:layout_marginLeft="495dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/decreaseButton"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/increaseButton"
+        android:layout_marginStart="600dp"
+        android:layout_marginLeft="600dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addToCart"
+        android:layout_marginStart="700dp"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="20dp"/>
+
+    <StackView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stackView"
+        android:loopViews="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

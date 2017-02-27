@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_new_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.marudhar.marudharsareecenter.NewCustomer"
+        tools:showIn="@layout/activity_new_customer">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:layout_width="512dp"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/FirmName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="128dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:hint="Address"
+                android:inputType="textImeMultiLine|textPostalAddress"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:layout_width="512dp"
+                android:id="@+id/Address" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="192dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:hint="City"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:id="@+id/City" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="192dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp">
+
+            <EditText
+                android:hint="PinCode"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:id="@+id/PinCode" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="256dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp">
+
+            <EditText
+                android:hint="Phone Number(Primary)"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:id="@+id/PhNumPri"
+                android:layout_width="256dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp">
+
+            <EditText
+                android:hint="Phone Number(Secondary)"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:id="@+id/PhNumSec"
+                android:layout_width="256dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="256dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:hint="TIN"
+                android:inputType="numberDecimal"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:id="@+id/TIN"
+                android:layout_width="256dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AddItem"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:layout_marginTop="384dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp" />
+
+        <Button
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UpdateItem"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:layout_marginTop="384dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="200dp" />
+
+        <Button
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DeleteItem"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:layout_marginTop="384dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginStart="300dp" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginStart="400dp"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:layout_marginTop="384dp"
+            android:id="@+id/Cancel" />
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:entries="@array/customer_type"
+            android:layout_marginTop="334dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="450dp"
+            android:id="@+id/custTableLayout">
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/custTableRow">
+                <TextView
+                    android:text="Firm Name"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:id="@+id/custTableNameCell" />
+                <TextView
+                    android:text="TIN"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="City"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="PIN Code"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="Rating"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>

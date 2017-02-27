@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/OrderBookingSimpleScrollView">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="150dp">
+
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:id="@+id/OrderBookingSimpleTableLayOut"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="0dp">
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/OrderBookingSimpleTableRow"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Design Name"
+                    android:background="@drawable/cell_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:padding="3dip" />
+
+                <TextView
+                    android:text="Quantity"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:text="Price"
+                    android:background="@drawable/cell_shape"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:padding="3dip" />
+
+                <TextView
+                    android:text="Remark"
+                    android:background="@drawable/cell_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:padding="3dip" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderBookingSimpleNext"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/OrderBookingSimpleTableLayOut"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:id="@+id/OrderBookingSimpleCustomerName"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:textStyle="normal|bold"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:layout_centerHorizontal="false"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Item Name"
+            android:ems="10"
+            android:layout_below="@+id/OrderBookingSimpleCustomerName"
+            android:layout_alignStart="@+id/OrderBookingSimpleCustomerName"
+            android:layout_marginTop="10dp"
+            android:id="@+id/OrderBookSimpleItemName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:ems="10"
+            android:layout_below="@+id/OrderBookingSimpleCustomerName"
+            android:layout_alignStart="@+id/OrderBookingSimpleCustomerName"
+            android:layout_marginTop="50dp"
+            android:id="@+id/OrderBookSimpleItemQty" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:ems="10"
+            android:layout_below="@+id/OrderBookingSimpleCustomerName"
+            android:layout_alignStart="@+id/OrderBookingSimpleCustomerName"
+            android:layout_marginTop="90dp"
+            android:id="@+id/OrderBookSimpleItemPrice" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Remark"
+            android:ems="10"
+            android:layout_below="@+id/OrderBookingSimpleCustomerName"
+            android:layout_alignStart="@+id/OrderBookingSimpleCustomerName"
+            android:layout_marginTop="130dp"
+            android:id="@+id/OrderBookSimpleItemRemark" />
+
+        <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OrderBookSimpleItemRemark"
+            android:layout_alignStart="@+id/OrderBookingSimpleTableLayOut"
+            android:layout_marginTop="15dp"
+            android:id="@+id/orderBookingSimpleAdd" />
+    </RelativeLayout>
+</ScrollView>

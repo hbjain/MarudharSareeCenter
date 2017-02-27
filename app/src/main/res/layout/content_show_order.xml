@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ScrollOrderConfirm">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="56dp">
+
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:id="@+id/showOrderTableLayOut"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="0dp">
+
+
+                <TableRow android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showOrderTableRow"
+                    android:orientation="vertical">
+                    <TextView
+                        android:text="Design Name"
+                        android:background="@drawable/cell_shape"
+                        android:id="@+id/showOrderItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:text="Quantity"
+                        android:padding="3dip"
+                        android:background="@drawable/cell_shape"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp" />
+
+                    <TextView
+                    android:text="Price"
+                    android:background="@drawable/cell_shape"
+                    android:id="@+id/showOrderDesignImage"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:padding="3dip" />
+
+                    <TextView
+                        android:text="Remark"
+                        android:background="@drawable/cell_shape"
+                        android:id="@+id/showOrderDesignRemark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:text="Modify"
+                        android:padding="3dip"
+                        android:background="@drawable/cell_shape"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp" />
+
+                </TableRow>
+            </TableLayout>
+
+        <Button
+            android:text="Place Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderConfrim"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/showOrderTableLayOut"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/customerName"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="75dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false" />
+    </RelativeLayout>
+</ScrollView>

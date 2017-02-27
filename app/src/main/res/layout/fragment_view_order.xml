@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.marudhar.marudharsareecenter.ViewOrder$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:stretchColumns="*"
+        android:layout_marginTop="50dp"
+        android:id="@+id/viewOrderTblNew"
+        android:paddingBottom="200dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewTblRowNew">
+            <TextView
+                android:text="Sl no"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/slNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="3dip" />
+
+            <TextView
+                android:text="Customer"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/viewCustomerNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="3dip" />
+
+            <TextView
+                android:text="Order Date"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/viewOrderDateNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="3dip" />
+
+            <TextView
+                android:text="Order Time"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/viewOrderTimeNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+</ScrollView>

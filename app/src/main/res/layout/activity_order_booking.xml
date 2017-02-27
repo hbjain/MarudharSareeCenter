@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marudhar.marudharsareecenter.OrderBooking"
+    android:fitsSystemWindows="true"
+    android:background="#ecfac0">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:id="@+id/cartQty"
+        android:layout_gravity="top|right"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="43dp"
+        android:drawablePadding="0dp"
+        android:text="0"
+        android:layout_width="38dp"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textIsSelectable="false"
+        android:enabled="false"
+        android:clickable="false"
+        android:editable="false" />
+
+    <ImageButton
+        app:srcCompat="@drawable/ic_cart"
+        android:id="@+id/cartButton"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="top|right"
+        android:background="@drawable/blank"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        android:layout_height="107dp"
+        android:layout_width="93dp"
+        android:visibility="visible"
+        android:padding="0dp"
+        android:focusable="false"
+        android:layout_weight="1" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:elevation="0dp"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/hidden_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container"
+        android:background="@android:color/darker_gray">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_centerInParent="true"
+            android:id="@+id/hiddenPrice" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <item name="KEY_1" type="id"/>
+    <item name="KEY_2" type="id"/>
+    <item name="KEY_3" type="id"/>
+    <item name="KEY_4" type="id"/>
+    <item name="cancelCheckBox" type="id"/>
+    <item name="completedCheckBox" type="id"/>
+    <item name="OrderBookImageVisible" type="id"/>
+
+</resources>

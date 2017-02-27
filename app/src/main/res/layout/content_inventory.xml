@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_new_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.marudhar.marudharsareecenter.Inventory"
+        tools:showIn="@layout/activity_inventory">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:layout_width="200dp"
+                android:hint="Design Name"
+                android:layout_height="wrap_content"
+                android:id="@+id/DesignName"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:hint="Item Price"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:id="@+id/ItemPrice"
+                android:inputType="numberDecimal"
+                tools:inputType="numberDecimal"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_alignEnd="@+id/ProductRating">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Product Rating"
+                android:textStyle="bold|italic"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:inputType="numberDecimal"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:id="@+id/productRating" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:layout_width="100dp"
+                android:hint="Quantity"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:id="@+id/Quantity"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/ProductRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:entries="@array/customer_type">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <Button
+            android:text="Add/Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:id="@+id/InventoryAddUpdateButton"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:id="@+id/InventoryCancelButton"
+            android:layout_marginLeft="240dp" />
+
+        <Button
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="190dp"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:id="@+id/InventoryDeleteButton" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/InventoryAddUpdateButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/InventoryTableLayout">
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/InventoryTableRow">
+                <TextView
+                    android:text="Design Name"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:id="@+id/InventoryTableCell"
+                    android:textSize="22sp" />
+                <TextView
+                    android:text="Price"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"
+                    android:textSize="22sp" />
+                <TextView
+                    android:text="Quantity"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"
+                    android:textSize="22sp" />
+                <TextView
+                    android:text="Rating"
+                    android:padding="3dip"
+                    android:background="@drawable/cell_shape"
+                    android:textSize="22sp" />
+            </TableRow>
+
+
+
+        </TableLayout>
+
+        <ImageView
+        android:layout_width="275dp"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:layout_marginStart="470dp"
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_menu_camera"
+            android:layout_marginStart="400dp"
+            android:layout_marginLeft="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView1" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_menu_camera"
+            android:layout_marginStart="400dp"
+            android:layout_marginLeft="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView2" />
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_menu_camera"
+            android:layout_marginStart="400dp"
+            android:layout_marginLeft="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="170dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+
+
+    </RelativeLayout>
+</ScrollView>
